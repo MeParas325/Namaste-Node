@@ -40,12 +40,13 @@ module.exports = {
 // Importing a module
 const myModule = require('./myModule');
 myModule.myFunction(); // Output: Hello from CommonJS!
+```
 
-### 2. **ModuleJS**
+### 2. **ES Modules (ECMAScript Modules - ESM)**
 - **Syntax**:
   - Export: `export`
   - Import: `import`
-- **Default**: Used by modern frameworks like React, Angular etc.
+- **Default**: Used by modern frameworks like React, Angular, etc.
 - **Nature**: Newer way of handling modules.
 - **Behavior**: Asynchronous (supports dynamic imports).
 - **Mode**: Strict mode by default.
@@ -58,4 +59,9 @@ export const myFunction = () => console.log("Hello from ES Modules!");
 // Importing a module
 import { myFunction } from './myModule.js';
 myFunction(); // Output: Hello from ES Modules!
+```
+
+---
+
+Understanding these module systems is crucial for working efficiently with Node.js and JavaScript in general. CommonJS is still widely used in backend applications, while ES Modules are increasingly popular in modern frontend frameworks and newer Node.js versions.
 

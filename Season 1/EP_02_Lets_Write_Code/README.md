@@ -18,6 +18,7 @@ Node.js is built on two core components:
 ```javascript
 console.log(this === window); // true (in the browser)
 console.log(self === window); // true (in the browser)
+```
 
 ### In Node.js
 
@@ -31,7 +32,8 @@ console.log(self === window); // true (in the browser)
 ```javascript
 console.log(this === {}); // true (in Node.js, at the top level)
 console.log(global === this); // false (in Node.js)
-console.log(global.setTimeout); // [Function: setTimeout]```
+console.log(global.setTimeout); // [Function: setTimeout]
+```
 
 ### globalThis
 
@@ -44,18 +46,23 @@ console.log(global.setTimeout); // [Function: setTimeout]```
 console.log(globalThis === window); // true
 
 // In Node.js
-console.log(globalThis === global); // true ```
+console.log(globalThis === global); // true
+```
 
-#### Summary
-## Browser:
+---
+
+## Summary
+
+### Browser:
 - **Global object**: `window`.
 - `this` refers to `window`.
 - `window` is provided by the browser, not V8.
 
-## Node.js:
+### Node.js:
 - **Global object**: `global`.
 - `this` refers to `{}` at the top level.
 - `global` is provided by Node.js (LibUV), not V8.
 
-## `globalThis`:
+### `globalThis`:
 - A universal way to access the global object in any environment.
+
