@@ -61,3 +61,5 @@ The event loop is the core mechanism that allows Node.js to perform non-blocking
 4. Move to the **Check Phase** and execute `setImmediate()` callbacks.
 5. Move to the **Close Phase** and execute close event callbacks.
 6. Repeat the cycle.
+
+**Tick**: One Cycle of the Event Loop is known as a Tick.
